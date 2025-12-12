@@ -1,0 +1,64 @@
+{
+  "classification_prompt_template": "You are an assistant that classifies technician service call data into 3 categories:\n1. Part\n2. Failure Mode  \n3. Fix\n\nUse only the valid options listed below for each Part. Do not select a Failure Mode or Fix outside the allowed set for a given Part.\n\nRULES:\n\n{rules}\n\nINSTRUCTIONS:\n- Analyze the ENTIRE service call text for single or multiple distinct problems\n- Each problem must have a Part from the valid list above\n- Select the MOST SPECIFIC failure mode and fixes that matches the service call data.\n- Avoid Error Message: Select Error Message if no other specific failure mode applies.\n- If the data does not match a specific failure mode and doesn't fit Error message, select 'Unknown'.\n- Prioritize \"Reason For Service\" when identifying the first/primary problem\n- Return your response as valid JSON only\n\nPlease strictly follow these constraints when classifying. If you are unsure, choose 'Unknown' for human review.\n\nREQUIRED JSON FORMAT:\n{{\n  \"analysis\": {{\n    \"total_problems_found\": <number>,\n    \"confidence_level\": \"<high|medium|low>\"\n  }},\n  \"problems\": [\n    {{\n      \"problem_number\": 1,\n      \"part\": \"<Part Name>\",\n      \"failure_mode\": \"<Failure Mode>\",\n      \"fix\": \"<Fix Applied>\",\n      \"supporting_text\": \"<relevant excerpt from service call>\",\n      \"confidence\": \"<high|medium|low>\"\n    }}\n  ]\n}}",
+  
+  "classification_user_message_template": "Now classify:\n\nReason for Service = {reason_for_service}\nSpecial Notes = {special_notes}\nService Performed = {service_performed}\nIssue Reported = {issue_reported}",
+  
+  "examples": {
+    "multiple_problems": {
+      "input": {
+        "reason_for_service": "* 02.10.2024 12:34:43 UTC Steffen Petrausch (GBZAY)* Equi-Nr.: 357183 (PPU-Vertrag)* Fehler Motormodul-1 und Stop-Tasten-Fehler*",
+        "special_notes": "None",
+        "service_performed": "* 02.10.2024 12:34:43 UTC Steffen Petrausch (GBZAY)* Motormodul-1 erneuert und kalibriert. Stoptaster-Kit erneuert.* Keine Funktionsfähigkeit herstellbar. SRU sollte komplett erneuert werden.*",
+        "issue_reported": "* 02.10.2024 12:37:25 UTC SXSRIP2R Technical User (SXSRIP2R)* P2R RA Order# 718352096"
+      },
+      "output": {
+        "analysis": {
+          "total_problems_found": 2,
+          "confidence_level": "high"
+        },
+        "problems": [
+          {
+            "problem_number": 1,
+            "part": "Motor Module",
+            "failure_mode": "Piston Error",
+            "fix": "Motor Module Replaced",
+            "supporting_text": "Motor module error - replaced motor",
+            "confidence": "high"
+          },
+          {
+            "problem_number": 2,
+            "part": "All-Stop Button",
+            "failure_mode": "Error Message",
+            "fix": "Connector Reseated",
+            "supporting_text": "Stop button kit replaced.* Functionality cannot be restored.",
+            "confidence": "high"
+          }
+        ]
+      }
+    },
+    "single_problem": {
+      "input": {
+        "reason_for_service": "* 14.06.2022 09:53:09 UTC SXXI0XIP Technical User (SXXI0XIP)X The system is down (EC1)!! Piston error saline customer already cleaned and resets",
+        "special_notes": "19.06.2022 16:58:03 UTC Dean Shepherd (GDECU) Phone +44 1635/563216* Piston Motor DOA, used sensor off DOA unit to repair customers piston motor.",
+        "service_performed": "* 14.06.2022 09:53:09 UTC SXXI0XIP Technical User (SXXI0XIP)X please plan a visit and replace the motormodule.",
+        "issue_reported": "14.06.2022 09:53:09 UTC SXXI0XIP Technical User (SXXI0XIP)X EMC-No Contract-Ref:TAC Ticket:492102U CENTARGO Serial 90000039"
+      },
+      "output": {
+        "analysis": {
+          "total_problems_found": 1,
+          "confidence_level": "high"
+        },
+        "problems": [
+          {
+            "problem_number": 1,
+            "part": "Motor Module",
+            "failure_mode": "Plunger Engagement",
+            "fix": "Motor Module(s) Replaced",
+            "supporting_text": "Piston motor DOA, replaced motor module",
+            "confidence": "high"
+          }
+        ]
+      }
+    }
+  }
+}

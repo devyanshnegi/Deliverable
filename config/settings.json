@@ -1,0 +1,32 @@
+{
+  "translation": {
+    "batch_size": 10,
+    "batch_delay": 0.5,
+    "columns_to_translate": [
+      "REASON_FOR_SERVICE",
+      "SPECIAL_NOTES",
+      "SERVICE_PERFORMED",
+      "ISSUE_REPORTED",
+      "DESCRIPTION"
+    ],
+    "target_language": "en"
+  },
+  "classification": {
+    "max_workers": 10,
+    "max_attempts": 5,
+    "max_problems_per_call": 3,
+    "model": "gpt-4o",
+    "temperature": 0.1
+  },
+  "api": {
+    "authority": "https://login.microsoftonline.com/fcb2b37b-5da0-466b-9b83-0014b67a7c78",
+    "client_id": "fdbc25f6-c263-4d93-b5ce-640e8d35aee7",
+    "scope": "https://bayer.com/prod-baychatgpt-api/.default",
+    "endpoint": "https://chat.int.bayer.com/api/v2/chat/completions",
+    "pac_url": "http://ptb-proxy.na.bayer.cnb/proxy.pac"
+  },
+  "output": {
+    "save_progress": true,
+    "create_backup": true
+  }
+}

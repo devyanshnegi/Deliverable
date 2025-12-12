@@ -1,0 +1,266 @@
+{
+  "All-Stop Button": {
+    "failure_modes": ["Error Message"],
+    "fixes": ["Connector Reseated"]
+  },
+  "Barcode Reader": {
+    "failure_modes": ["Noise", "Not Working"],
+    "fixes": ["Temporary Fix", "Reseated Cable"]
+  },
+  "Base Tray": {
+    "failure_modes": ["Error Message", "Fuse Blown"],
+    "fixes": ["Base Tray Replaced", "Fuse Replaced"]
+  },
+  "Battery Pack": {
+    "failure_modes": ["Defective Part", "Performance Issues", "Not Working", "Customer Request"],
+    "fixes": ["Battery Packs Replaced", "Base Tray Replaced", "Request Completed"]
+  },
+  "Control Room Unit(CRU)": {
+    "failure_modes": ["Ghost Touch", "Screen Flickering", "Screen Issues", "Touch Issues", "Freezing", "Network Connectivity", "Settings", "Unknown", "Wrong Serial Number", "Crash", "Communication Loss", "Error Message", "Software Update Issues", "Not Working"],
+    "fixes": ["Control Room Unit Screen Replaced", "Cable Replaced", "Checked for Issue, Not Reproduced", "Control Room Unit Replaced", "Software Updated", "Settings Adjusted", "Cable Reseated", "Files Deleted"]
+  },
+  "Door Open/Close": {
+    "failure_modes": ["Door Latch", "Part Broken"],
+    "fixes": ["Door Latch Replaced", "Adjusted", "Unable to Repair", "Part Replaced"]
+  },
+  "Fluid Delivery": {
+    "failure_modes": ["Overpressure Disarm", "Pressure Issues"],
+    "fixes": ["Customer Educated", "Pressure Calibration", "Saline Motor Replaced"]
+  },
+  "Fluid Loading Area": {
+    "failure_modes": ["Part Broken"],
+    "fixes": ["Part Replaced"]
+  },
+  "Head Control Unit(HCU)": {
+    "failure_modes": ["Performance Issues", "Communication Loss", "Error Message"],
+    "fixes": ["Head Control Unit Replacement", "HCU Replaced", "Could Not Reproduce"]
+  },
+  "Heat Maintainer": {
+    "failure_modes": ["Error Message", "Performance Issues"],
+    "fixes": ["Heat Maintainer Replaced - Door Side", "Heat Maintainer Replaced - Core Side"]
+  },
+  "Injector Power On/Off": {
+    "failure_modes": ["Power Cord Disconnected", "Not Working", "Error Message", "Air Detection", "Sensor Error", "Part Broken"],
+    "fixes": ["Power Cord Reseated", "Could Not Reproduce", "Software Reloaded", "Sensor Replaced", "Calibrated", "Part Replaced", "Customer Educated"]
+  },
+  "PACS / MWL": {
+    "failure_modes": ["Feature not Working", "Network Connectivity"],
+    "fixes": ["Reapplied License", "Connector Reseated", "Network Settings Configured"]
+  },
+  "Inlet Air Detector(IAD)": {
+    "failure_modes": ["Fill/Purge/Prime Issues", "Saline Loading Issues", "Error Message", "Sensing Issues", "Unknown", "Loose Sensor", "Spike Detection Issues", "Air Sensor Issues", "Air Detection", "Sensor Error", "Piston Movement", "Calibration Issues"],
+    "fixes": ["Inlet Air Detector(s) Replaced - S0, C1, C2", "Inlet Air Detector(s) Replaced - S0", "Inlet Air Detector(s) Replaced - C1", "Inlet Air Detector(s) Replaced - C2", "Inlet Air Detector(s) Replaced", "Calibrated", "Sensor Clamp Screw Tightened", "Cleaned", "Inlet Air Detector(s) Replaced - NaCl Side", "Topboard Replaced", "Software Updated", "Customer Educated"]
+  },
+  "Imaging Scanner Interface(ISI)": {
+    "failure_modes": ["Scanner Communication"],
+    "fixes": ["Imaging Scanner Interface Replaced", "Control Room Unit Replaced", "Imaging Scanner Interface Replaced"]
+  },
+  "Motor Control Unit(MCU)": {
+    "failure_modes": ["Piston Movement", "Software Update Issues", "Error Message"],
+    "fixes": ["Motor Control Unit Replaced"]
+  },
+  "Motor Module": {
+    "failure_modes": ["Communication Issues", "Error Message", "Fill/Purge/Prime Issues", "Overcurrent", "Piston Movement", "Plunger Engagement", "Pressure Issues", "Broken Part", "Day Set Stuck", "Unknown", "Performance Issues", "Injection without Command", "Defective Part", "Software Update Issues", "Touchscreen Issues", "Calibration Issues", "Motor Issues", "Detection Issues", "Not Working", "Sporadic Start Pulse Issues", "Docking Issues"],
+    "fixes": ["Motor Module(s) Replaced", "Motor Module(s) Replaced - C1", "Motor Module(s) Replaced - C2", "Motor Module(s) Replaced - S0", "Motor Module(s) Replaced - S0, C1, C2", "Adjusted", "Calibrated", "Plunger Engagement Mechanism Replaced", "Injector Replaced", "Motor Module(s) Replaced - S2", "Software Updated", "Motor Module(s) Replaced - C0", "Motor Module(s) Replaced - S0, C1"]
+  },
+  "N/A": {
+    "failure_modes": ["Error Message", "Customer Request", "Files Deleted"],
+    "fixes": ["Files Deleted", "Checked for Issue, Not Reproduced", "Customer Educated"]
+  },
+  "Outlet Air Detector": {
+    "failure_modes": ["Air Detection", "Error Message", "Not Working", "Unknown", "Fill/Purge/Prime Issues", "Broken Part"],
+    "fixes": ["Outlet Air Detector Replaced", "Part Replaced"]
+  },
+  "Prime Container": {
+    "failure_modes": ["Customer Request", "Sensing Issues"],
+    "fixes": ["Request Completed", "Cleaned", "Prime Container Sensor Replaced"]
+  },
+  "Sensor Readout Unit Display(SRU Display)": {
+    "failure_modes": ["Touchscreen Issues", "Black Screen", "Screen Issues", "Software Update Issues", "Error Message", "Communication Loss", "Part Broken", "Sensing Issues"],
+    "fixes": ["Sensor Readout Unit Display(SRU Display) Replaced", "Connector Reseated", "Injector Replaced", "Software Updated", "Customer Educated", "Cleaned"]
+  },
+  "Stopcock Module": {
+    "failure_modes": ["Error Message", "Stopcock Issue"],
+    "fixes": ["Stopcock Module Replaced", "Connector Reseated", "Could Not Reproduce"]
+  },
+  "SUDS Board": {
+    "failure_modes": ["LED Not Working"],
+    "fixes": ["SUDS Board Replaced"]
+  },
+  "Single-Use Devices LEDs (SUDS LEDs)": {
+    "failure_modes": ["LEDs Not Working"],
+    "fixes": ["Cable(s) Reseated", "Single-Use Devices Sensor(SUDS) Board Replaced"]
+  },
+  "Single-Use Devices Sensor(SUDS Sensor)": {
+    "failure_modes": ["Sensing Issues", "Broken Part", "Error Message"],
+    "fixes": ["Single-Use Devices Sensor(SUDS) Replaced"]
+  },
+  "System": {
+    "failure_modes": ["Crash", "Customer Request", "Injection without Command", "Software Update Issues", "N/A", "Installation Issues", "Not Working", "Sporadic Start Pulse Issues", "Performance Issues", "Settings"],
+    "fixes": ["Software Reloaded", "System Relocated", "Multiple Parts Replaced", "Request Completed", "Software Updated", "Files Deleted", "Checked for Issue, Not Reproduced", "Installation Completed", "Network Settings Configured"]
+  },
+  "Unknown": {
+    "failure_modes": ["Unknown"],
+    "fixes": ["Unknown"]
+  },
+  "Wifi Communication": {
+    "failure_modes": ["Communication Loss", "Wifi Antenna"],
+    "fixes": ["Control Room Unit Replaced", "Control Room Unit Replaced - WS3", "Wifi Channel Changed", "Educated Customer", "Pairing Performed", "Unable to Repair", "Adjusted"]
+  },
+  "Wired Communication": {
+    "failure_modes": ["Communication Loss"],
+    "fixes": ["Ethernet Extension in Base Replaced"]
+  },
+  "Multi-Use Disposable Set (MUDS)": {
+    "failure_modes": ["Sensing Issues", "Broken Part", "Latch Not Releasing", "Error Message"],
+    "fixes": ["Cleaned", "Pins Repaired and Reassembled", "Pins Released and Cleaned", "Calibrated", "Checked for Issue, Not Reproduced", "Injector Replaced", "Sensor Replaced"]
+  },
+  "Spike": {
+    "failure_modes": ["Spike Detection Issues"],
+    "fixes": ["Calibrated"]
+  },
+  "Waste Level Sensor": {
+    "failure_modes": ["Sensing Issues"],
+    "fixes": ["Waste Level Sensor Replaced"]
+  },
+  "Housing/Cover": {
+    "failure_modes": ["Housing/Cover Broken"],
+    "fixes": ["Housing/Cover Replaced"]
+  },
+  "Wheel Assembly/ Caster": {
+    "failure_modes": ["Wheel/Caster Jamming"],
+    "fixes": ["Wheel Assembly/Caster Replaced"]
+  },
+  "Patient Line Sensor": {
+    "failure_modes": ["Sensor Error", "Communication Loss"],
+    "fixes": ["Sensor Replaced"]
+  },
+  "Release Lever/MUDS Restraint": {
+    "failure_modes": ["Broken Part"],
+    "fixes": ["Pin Replaced"]
+  },
+  "Water Level Sensor": {
+    "failure_modes": ["Sensor Error"],
+    "fixes": ["Sensor Replaced"]
+  },
+  "Workstation(WS 3 or WKS 3)": {
+    "failure_modes": ["Upgrade Required", "Obsolete Equipment", "Customer Request", "Unknown"],
+    "fixes": ["Upgraded to Workflow Hub", "Workflow Hub Replaced", "Unknown"]
+  },
+  "Workflow Hub(WFH)": {
+    "failure_modes": ["No USB-C Signal", "Unkown"],
+    "fixes": ["Workflow Hub Replaced", "Unkown"]
+  },
+  "Touch Display Unit": {
+    "failure_modes": ["Unknown"],
+    "fixes": ["Unknown"]
+  },
+  "Emergency Stop Button": {
+    "failure_modes": ["Error Message"],
+    "fixes": ["Emergency Stop Button Replaced"]
+  },
+  "Saline Clamp": {
+    "failure_modes": ["Broken Part"],
+    "fixes": ["Saline Clamp Replaced"]
+  },
+  "Bottle Clamp": {
+    "failure_modes": ["Part Broken"],
+    "fixes": ["Part Replaced"]
+  },
+  "Processor Q7/Q7 Module": {
+    "failure_modes": ["Sporadic Start Pulse Issues"],
+    "fixes": ["Processor Replaced"]
+  },
+  "Advance Saline button Button": {
+    "failure_modes": ["Not Working"],
+    "fixes": ["Advance Saline Button Replaced"]
+  },
+  "Serum Air Detector": {
+    "failure_modes": ["Calibration Issues"],
+    "fixes": ["Serum Air Detector Replaced"]
+  },
+  "Monitor Assembly": {
+    "failure_modes": ["Missing Parts", "Not Working"],
+    "fixes": ["Parts Located and Delivered", "Power Supply Replaced"]
+  },
+  "Waste Container": {
+    "failure_modes": ["Customer Request", "Sensor Error"],
+    "fixes": ["Parts Located and Delivered", "Cleaned"]
+  },
+  "Centargo": {
+    "failure_modes": ["Installation Issues"],
+    "fixes": ["Installation Completed"]
+  },
+  "Door Motor": {
+    "failure_modes": ["Motor Issues"],
+    "fixes": ["Door Motor Replaced"]
+  },
+  "Ultrasonic Detector": {
+    "failure_modes": ["Not Working"],
+    "fixes": ["Ultrasonic Detector Replaced"]
+  },
+  "Flight Recorder": {
+    "failure_modes": ["Data Download Required"],
+    "fixes": ["Flight Recorder Downloaded"]
+  },
+  "Piston Tip/Plunger Engagement Mechanism": {
+    "failure_modes": ["Part Broken"],
+    "fixes": ["Piston Tip Replaced"]
+  },
+  "Power Cable": {
+    "failure_modes": ["Loose Cable"],
+    "fixes": ["Cable Replaced"]
+  },
+  "Power Supply Module": {
+    "failure_modes": ["Overcurrent"],
+    "fixes": ["Power Supply Module Replaced"]
+  },
+  "Air Sensor Door": {
+    "failure_modes": ["Part Broken"],
+    "fixes": ["Part Replaced"]
+  },
+  "Saline Piston": {
+    "failure_modes": ["Clean Saline Piston"],
+    "fixes": ["Saline Piston Replaced"]
+  },
+  "Piston Recognition Unit": {
+    "failure_modes": ["Detection Issues"],
+    "fixes": ["Multiple Parts Replaced"]
+  },
+  "Topboard": {
+    "failure_modes": ["Unknown"],
+    "fixes": ["Topboard Replaced"]
+  },
+  "Motor Assembly": {
+    "failure_modes": ["Encoder Alarm"],
+    "fixes": ["Motor Assembly Replaced with Modified Version"]
+  },
+  "AC Adapter": {
+    "failure_modes": ["Bad Contact"],
+    "fixes": ["AC Adapter Replaced"]
+  },
+  "Cartridge Docking Module": {
+    "failure_modes": ["Malfunction"],
+    "fixes": ["Parts Located and Delivered"]
+  },
+  "Syringe Attachment Mechanism": {
+    "failure_modes": ["Attachment Issues"],
+    "fixes": ["Syringe Attachment Mechanism Replaced"]
+  },
+  "Sensor Mounting Assembly": {
+    "failure_modes": ["Part Broken"],
+    "fixes": ["Sensor Mounting Assembly Replaced"]
+  },
+  "Bezel Assembly": {
+    "failure_modes": ["Part Broken"],
+    "fixes": ["Bezel Assembly Replaced"]
+  },
+  "Top Tray": {
+    "failure_modes": ["Part Broken"],
+    "fixes": ["Part Replaced"]
+  },
+  "Multiple Parts": {
+    "failure_modes": ["Multiple Part Failures"],
+    "fixes": ["Multiple Part Fixes"]
+  }
+}
